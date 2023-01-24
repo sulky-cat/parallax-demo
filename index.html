@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Parallax</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<section data-prlx-parent data-center="bottom" id="s-1" class="section">
+			<div data-prlx data-coefficient="10" class="img-mounts"></div>
+			<div data-prlx data-coefficient="5" class="img-mounts-2"></div>
+			<div data-prlx data-coefficient="2" class="img-forest"></div>
+			<h1 class="section__title" data-prlx data-direction="+" data-coefficient="3">Parallax.js</h1>
+		</section>
+		<section data-prlx-parent class="section section_auto">
+			<h2 data-prlx data-axis="h" class="section__title">Без событий!</h2>
+			<div data-prlx data-axis="h" data-direction="+" class="section__text">
+				<p>Вместо событий прокрутки используется requestAnimationFrame, что добавляет плавности к прокрутке.</p>
+			</div>
+		</section>
+		<section class="section">
+			<h2 class="section__title">Примеры</h2>
+			<div class="section__row">
+				<h3 class="section__title">Стандартное подключение</h3>
+				<div data-prlx-parent class="section__demo demo">
+					<img data-prlx src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+			</div>
+			<div class="section__row">
+				<h3 class="section__title">Настройка осей</h3>
+				<div data-prlx-parent class="section__demo demo">
+					<img data-prlx data-axis="h" src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx data-axis</span>=<span class="string">"h"</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+				<div data-prlx-parent class="section__demo demo">
+					<img data-prlx data-axis="v" src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx data-axis</span>=<span class="string">"v"</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+			</div>
+			<div class="section__row">
+				<h3 class="section__title">Настройка направлений</h3>
+				<div data-prlx-parent class="section__demo demo">
+					<img data-prlx data-axis="h" data-direction="-" src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx data-axis</span>=<span class="string">"h"</span> <span class="var">data-direction</span>=<span class="string">"-"</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+				<div data-prlx-parent class="section__demo demo">
+					<img data-prlx data-axis="h" data-direction="+" src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx data-axis</span>=<span class="string">"h"</span> <span class="var">data-direction</span>=<span class="string">"+"</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+				<div data-prlx-parent class="section__demo demo">
+					<img data-prlx data-axis="v" data-direction="-" src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx data-axis</span>=<span class="string">"v"</span> <span class="var">data-direction</span>=<span class="string">"-"</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+				<div data-prlx-parent class="section__demo demo">
+					<img data-prlx data-axis="v" data-direction="+" src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx data-axis</span>=<span class="string">"v"</span> <span class="var">data-direction</span>=<span class="string">"+"</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+			</div>
+			<div class="section__row">
+				<h3 class="section__title">Настройка делителя анимации</h3>
+				<div data-prlx-parent class="section__demo demo">
+					<img data-prlx data-coefficient="10" src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx data-coefficient</span>=<span class="string">"10"</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+				<div data-prlx-parent class="section__demo demo">
+					<img data-prlx data-coefficient="5" src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx data-coefficient</span>=<span class="string">"5"</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+				<div data-prlx-parent class="section__demo demo">
+					<img data-prlx data-coefficient="1" src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx data-coefficient</span>=<span class="string">"1"</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+			</div>
+			<div class="section__row">
+				<h3 class="section__title">Настройки изначальных дополнительных стилей</h3>
+				<div data-prlx-parent class="section__demo demo">
+					<img data-prlx data-properties="rotate(45deg)" src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx data-properties</span>=<span class="string">"rotate(45deg)"</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+			</div>
+			<div class="section__row">
+				<h3 class="section__title">Настройка плавности анимации</h3>
+				<div data-prlx-parent data-smooth="50" class="section__demo demo">
+					<img data-prlx src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent data-smooth</span>=<span class="string">"50"</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+				<div data-prlx-parent data-smooth="15" class="section__demo demo">
+					<img data-prlx src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent data-smooth</span>=<span class="string">"15"</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+				<div data-prlx-parent data-smooth="1" class="section__demo demo">
+					<img data-prlx src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent data-smooth</span>=<span class="string">"1"</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+			</div>
+			<div class="section__row">
+				<h3 class="section__title">Настройка нулевой позиции</h3>
+				<div class="section__text section__text_right">
+					<p><span class="string">"top"</span> - Элемент в позиции (0,0), когда верхний край родителя соприкасается с верхним краем экрана</p>
+					<p><span class="string">"center"</span> - Элемент в позиции (0,0), когда центр родителя (по высоте) соприкасается с центром экрана (по высоте)</p>
+					<p><span class="string">"bottom"</span> - Элемент в позиции (0,0), когда ниэний край родителя соприкасается с нижним краем экрана</p>
+				</div>
+				<div data-prlx-parent data-center="top" class="section__demo demo demo_full">
+					<img data-prlx src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent data-center</span>=<span class="string">"top"</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+				<div data-prlx-parent data-center="center" class="section__demo demo demo_full">
+					<img data-prlx src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent data-center</span>=<span class="string">"center"</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+				<div data-prlx-parent data-center="bottom" class="section__demo demo demo_full">
+					<img data-prlx src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__code">
+					<pre><code>&lt;<span class="red">div</span> <span class="var">data-prlx-parent data-center</span>=<span class="string">"bottom"</span>>
+   &lt;<span class="red">div</span> <span class="var">data-prlx</span>> Элемент &lt;<span class="red">div</span>>
+&lt;<span class="red">div</span>></code></pre>
+				</div>
+
+			</div>
+			<div class="section__row">
+				<h3 class="section__title">Методы</h3>
+				<div class="section__text section__text_right">
+					<p><span class="function">setEvents()</span> - утсановить плагин</p>
+					<p><span class="function">destroyEvents()</span> - удалить плагин</p>
+				</div>
+				<div class="section__text">
+					<p>Установить / удалить для всех параллаксов на странице</p>
+				</div>
+				<div class="section__buttons">
+					<button data-event-all="init" type="button">init all</button>
+					<button data-event-all="destroy" type="button">destroy all</button>
+				</div>
+				<div class="section__code">
+					<pre><code><span class="all">const</span> <span class="var">parallaxPlug</span> = <span class="all">new</span> <span class="function">Parallax</span>(<span class="red">document</span>.<span class="function">querySelectorAll</span>(<span class="string">'[data-prlx-parent]'</span>));
+<span class="all">const</span> <span class="var">buttons</span> = <span class="red">document</span>.<span class="function">querySelectorAll</span>(<span class="string">'[data-event-all]'</span>);
+<span class="red">buttons</span>.<span class="function">forEach</span>(<span class="red">button</span> => {
+  <span class="red">button</span>.<span class="function">addEventListener</span>(<span class="string">'click'</span>, () => {
+    <span class="all">const</span> <span class="var">data</span> = <span class="red">button</span>.<span class="red">dataset</span>.<span class="red">eventAll</span class="red">;
+    <span class="all">switch</span> (<span class="red">data</span>) {
+      <span class="all">case</span> <span class="string">"init"</span>:
+        <span class="red">parallaxPlug</span>.<span class="function">init</span>();
+        <span class="all">break</span>;
+      <span class="all">case</span> <span class="string">"destroy"</span>:
+        <span class="red">parallaxPlug</span>.<span class="function">destroy</span>();
+        <span class="all">break</span>;
+      <span class="all">default</span>:
+        <span class="all">break</span>;
+    }
+  });
+});</code></pre>
+				</div>
+				<div class="section__text">
+					<p>Установить / удалить для одного параллакса</p>
+				</div>
+				<div data-prlx-parent data-center="top" class="section__demo demo demo_js">
+					<img data-prlx src="img/01.png" alt="Изображение Vinicius Negrao с сайта Pixabay">
+				</div>
+				<div class="section__buttons">
+					<button data-event="init" type="button">init</button>
+					<button data-event="destroy" type="button">destroy</button>
+				</div>
+				<div class="section__code">
+					<pre><code><span class="all">const</span> <span class="var">parallaxPlug</span> = <span class="all">new</span> <span class="function">Parallax</span>(<span class="red">document</span>.<span class="function">querySelectorAll</span>(<span class="string">'[data-prlx-parent]'</span>));
+<span class="all">const</span> <span class="var">jsParent</span> = <span class="red">parallaxPlug</span>.<span class="red">elements</span>.<span class="function">find</span>(<span class="red">el</span> => <span class="red">el</span>.<span class="red">parent</span>.<span class="red">classList</span>.<span class="function">contains</span>(<span class="string">'demo_js'</span>));
+<span class="all">const</span> <span class="var">buttons</span> = <span class="red">document</span>.<span class="function">querySelectorAll</span>(<span class="string">'[data-event]'</span>);
+<span class="red">buttons</span>.<span class="function">forEach</span>(<span class="red">button</span> => {
+  <span class="red">button</span>.<span class="function">addEventListener</span>(<span class="string">'click'</span>, () => {
+    <span class="all">const</span> <span class="var">data</span> = <span class="red">button</span>.<span class="red">dataset</span>.<span class="red">event</span class="red">;
+    <span class="all">switch</span> (<span class="red">data</span>) {
+      <span class="all">case</span> <span class="string">"init"</span>:
+        <span class="red">jsParent</span>.<span class="function">init</span>();
+        <span class="all">break</span>;
+      <span class="all">case</span> <span class="string">"destroy"</span>:
+        <span class="red">jsParent</span>.<span class="function">destroy</span>();
+        <span class="all">break</span>;
+      <span class="all">default</span>:
+        <span class="all">break</span>;
+    }
+  });
+});</code></pre>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
